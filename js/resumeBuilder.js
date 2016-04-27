@@ -25,7 +25,7 @@ var work = {
      "description" : "Migrate from Onpremise to GCP or AWS.Migrate from Onpremise to GCP or AWS.Migrate from Onpremise to GCP or AWS.Migrate from Onpremise to GCP or AWS.Migrate from Onpremise to GCP or AWS.Migrate from Onpremise to GCP or AWS.Migrate from Onpremise to GCP or AWS."
     },
     {
-     "employer" : "okubotech",
+     "employer" : "okubo-tech",
      "title" : "Consultant",
      "location" : "Japan, Tokyo, Itabashi-ku",
      "dates" : "inprogress",

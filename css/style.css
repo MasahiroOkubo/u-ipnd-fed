@@ -22,7 +22,6 @@ svg {
   overflow: auto;
 }
 
-.graph-entry,
 .education-entry,
 .work-entry,
 .project-entry {
@@ -65,7 +64,6 @@ h5 {
   padding:10px 5%;
 
 }
-
 
 .date-text {
   font-style: italic;
