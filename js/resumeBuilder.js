@@ -1,218 +1,183 @@
-// JSON
+'use strict';
+
 var bio = {
-    "name": "Masahiro Okubo",
-    "role": "Front End developer",
-    "age": 31,
-    "contacts": {
-        "mobile": "(+81)90-9671-3566",
-        "email": "okubo.masahiro@okubo-tech.com",
-        "github": "MasahiroOkubo",
-        "twitter": "@MasahiroOkubo",
-        "blog": "http://try10know1.blogspot.jp/",
-        "location": "Japan, Tokyo, Itabashi-ku"
-    },
-    "biopic": "images/MasahiroOkubo.png",
-    "message": "Welcome!",
-    "skills": ["awesomeness", "programming", "teaching", "JS"]
+  name: 'Masahiro Okubo',
+  role: 'Front End developer',
+  contacts: {
+    mobile: '(+81)90-9671-3566',
+    email: 'okubo.masahiro@okubo-tech.com',
+    github: 'MasahiroOkubo',
+    twitter: '@MasahiroOkubo',
+    blog: 'http://try10know1.blogspot.jp',
+    location: 'Japan, Tokyo, Itabashi-ku'
+  },
+  welcomeMessage: 'Welcome! My BIO Page. I am lucky to born in this age "The-Internet-Age".',
+  skills: [
+    'GoogleCloudPlatform ( Especially, I love AppEngine ! )',
+    'Python ( Do you know the word "Zen" is come from Japanese. )',
+    'JavaScript ( I Want to make Single Page Applications. )',
+    'Other ( Redhat, Windows, Oracle, vSphere, etc... )'
+  ],
+  biopic: 'images/MasahiroOKUBO.jpg',
+  age: 31,
+  likings: [
+  'PlayStation4 ( I love "Call of Duty" series. )',
+  'Trecking ( Only Summer and No snow. I am biginner. )',
+  'Udacity ( Study is Fun ! )'
+  ]
 };
 var work = {
-    "jobs": [{
-        "employer": "NSSOL",
-        "title": "Infra Engineer",
-        "location": "Japan, Tokyo, Chuo-ku",
-        "dates": "2008-2013",
-        "description": "Administrate onpremise systems lifecycle. Especially about Infra such as Server(Bladesystem), Storage(Netapp,EMC), HV/OS(ESX,RHEL,Windows), Database(Oracle,Postgresql), Network(Cisco,Juniper) etc. I did Make plan to purchase, Design architecture, Review documents, Setup softwares, Tests, Data migration, Write script, Trouble shooting etc."
+    jobs: [{
+        employer: 'NSSOL',
+        title: 'InfraEngineer',
+        location: 'Japan, Tokyo, Chuo-ku',
+        dates: '2008 - 2013',
+        description: 'Administrate onpremise systems lifecycle. Especially about Infra such as Server(Bladesystem), Storage(Netapp,EMC), HV/OS(ESX,RHEL,Windows), Database(Oracle,Postgresql), Network(Cisco,Juniper) etc. I did Make plan to purchase, Design architecture, Review documents, Setup softwares, Tests, Data migration, Write script, Trouble shooting etc.'
     }, {
-        "employer": "okubo-tech",
-        "title": "programmer",
-        "location": "Japan, Tokyo, Itabashi-ku",
-        "dates": "inprogress",
-        "description": "Make plan to migrate systems from Onpremise to GCP. Suggest loadmap about IT systems. I am interestd in rapid development of WebApps. So It's my pleasure to study Javascript!"
+        employer: 'Freelancer',
+        title: 'Programmer',
+        location: 'Japan, Tokyo, Itabashi-ku',
+        dates: '2013 - inprogress',
+        description: 'Make plan to migrate systems from Onpremise to GoogleCloudPlatform. And to SMB CEO, Suggest loadmap about IT systems. Also I am interestd in rapid development of WebApplications. So It is my pleasure to study Javascript frame works!'
     }]
 };
 var projects = {
-    "projects": [{
-        "title": "Translate",
-        "dates": "inprogress",
-        "description": "Traslate Udacity videos in Japanese.",
-        "images": [
-            "images/fry.jpg",
-            "images/fry.jpg",
-            "images/fry.jpg"
+    projects: [{
+        title: 'Translate Udacity Contents',
+        dates: '2016 - inprogress',
+        description: 'Traslate Udacity videos in Japanese. I love Udacity so want to volunteer someelse.',
+        images: [
+            'images/volunteer-udacity-1.jpg',
+            'images/volunteer-udacity-2.jpg'
         ]
     }, {
-        "title": "Google Apps Missionary",
-        "dates": "inprogress",
-        "description": "I explain and show how to use Google Apps.",
-        "images": [
-            "images/fry.jpg",
-            "images/fry.jpg"
+        title: 'Google Apps Missionary',
+        dates: 'inprogress',
+        description: 'I explain and show how to use Google Apps.',
+        images: [
+            'images/fry.jpg',
+            'images/fry.jpg'
         ]
     }]
 };
 var education = {
-    "schools": [{
-        "name": "keio",
-        "degree": "Bachelor of Arts",
-        "dates": "2003-2007",
-        "location": "Japan, Tokyo, Minato-ku",
-        "major": "politics",
-        "url": "http://www.keio.ac.jp/index-jp.html"
+    schools: [{
+        name: 'keio',
+        degree: 'Bachelor of Arts',
+        dates: '2003-2007',
+        location: 'Japan, Tokyo, Minato-ku',
+        majors: ['politics'],
+        url: 'http://www.keio.ac.jp/index-jp.html'
     }, {
-        "name": "kaisei",
-        "degree": "High school",
-        "dates": "2003-03-31",
-        "location": "Japan, Tokyo, Arakawa-ku",
-        "major": "fundamental",
-        "url": "http://kaiseigakuen.jp/"
+        name: 'Kaisei high school',
+        degree: 'High school',
+        dates: '2003-03-31',
+        location: 'Japan, Tokyo, Arakawa-ku',
+        majors: ['fundamental'],
+        url: 'http://kaiseigakuen.jp'
     }],
-    "onlineCourses": [{
-        "title": "IPND",
-        "school": "Udacity",
-        "dates": "2016-04-30",
-        "url": "https://www.udacity.com/"
+    onlineCourses: [{
+        title: 'Into to Programming Nanodegree',
+        school: 'Udacity',
+        date: '2016-04',
+        url: 'https://www.udacity.com'
     }, {
-        "title": "IPND",
-        "school": "Udacity",
-        "dates": "2016-04-30",
-        "url": "https://www.udacity.com/"
+        title: 'Developing Scalable Apps in Python',
+        school: 'Udacity',
+        date: '2016-05',
+        url: 'https://www.udacity.com'
     }, {
-        "title": "IPND",
-        "school": "Udacity",
-        "dates": "2016-04-30",
-        "url": "https://www.udacity.com/"
+        title: 'HTML5 Game Development',
+        school: 'Udacity',
+        date: '2016-06',
+        url: 'https://www.udacity.com'
     }]
 };
 
-// Header
-function showHeader() {
-    // header
-    var formattedName = HTMLheaderName.replace("%data%", bio.name);
-    var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-    $("#header").prepend(formattedRole);
-    $("#header").prepend(formattedName);
+bio.display = function(){
+    var formattedName = HTMLheaderName.replace('%data%', bio.name);
+    var formattedRole = HTMLheaderRole.replace('%data%', bio.role);
+    var formattedBioPic = HTMLbioPic.replace('%data%', bio.biopic);
+    var formattedMessage = HTMLwelcomeMsg.replace('%data%', bio.welcomeMessage);
+    var formattedmobile = HTMLmobile.replace('%data%', bio.contacts.mobile);
+    var formattedemail = HTMLemail.replace('%data%', bio.contacts.email);
+    var formattedtwitter = HTMLtwitter.replace('%data%', bio.contacts.twitter);
+    var formattedgithub = HTMLgithub.replace('%data%', bio.contacts.github);
+    var formattedblog = HTMLblog.replace('%data%', bio.contacts.blog);
+    var formattedlocation = HTMLlocation.replace('%data%', bio.contacts.location);
 
-    // header - topContacts
-    var formattedmobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-    var formattedemail = HTMLemail.replace("%data%", bio.contacts.email);
-    var formattedtwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-    var formattedgithub = HTMLgithub.replace("%data%", bio.contacts.github);
-    var formattedblog = HTMLblog.replace("%data%", bio.contacts.blog);
-    var formattedlocation = HTMLlocation.replace("%data%", bio.contacts.location);
-    $("#topContacts").append(formattedmobile);
-    $("#topContacts").append(formattedemail);
-    $("#topContacts").append(formattedtwitter);
-    $("#topContacts").append(formattedgithub);
-    $("#topContacts").append(formattedblog);
-    $("#topContacts").append(formattedlocation);
-
-    // header - biopic - welcomeMessage - skills
-    var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
-    $("#header").append(formattedBioPic);
-    var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.message);
-    $("#header").append(formattedMessage);
-    if (bio.skills.length > 0) {
-        $("#header").append(HTMLskillsStart);
-        for (var skill in bio.skills) {
-            if (bio.skills.hasOwnProperty(skill)) {
-                var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
-                $("#header").append(formattedSkill);
-            }
-        }
+    $('#header').prepend(formattedName, formattedRole);
+    $('#header').append(formattedBioPic, formattedMessage);
+    if (bio.skills.length) {
+        $('#header').append(HTMLskillsStart);
+        bio.skills.forEach(function(skill){
+            var formattedSkill = HTMLskills.replace('%data%', skill);
+            $('#skills-h3').append(formattedSkill);
+        })
     }
-}
-showHeader();
-
-// Footer
-function showFooter() {
-    var formattedmobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-    var formattedemail = HTMLemail.replace("%data%", bio.contacts.email);
-    var formattedtwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-    var formattedgithub = HTMLgithub.replace("%data%", bio.contacts.github);
-    var formattedlocation = HTMLlocation.replace("%data%", bio.contacts.location);
-    $("#footerContacts").append(formattedmobile);
-    $("#footerContacts").append(formattedemail);
-    $("#footerContacts").append(formattedtwitter);
-    $("#footerContacts").append(formattedgithub);
-    $("#footerContacts").append(formattedlocation);
-}
-showFooter();
-
-// workExperience
+    $('#topContacts, #footerContacts').append(formattedmobile, formattedemail,
+                                              formattedtwitter, formattedgithub);
+    $('#topContacts').append(formattedlocation, formattedblog);
+};
 work.display = function() {
-    for (var job in work.jobs) {
-        if (work.jobs.hasOwnProperty(job)) {
-            $("#workExperience").append(HTMLworkStart);
-            var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-            var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-            var formattedEmployerTitle = formattedEmployer + formattedTitle;
-            $(".work-entry:last").append(formattedEmployerTitle);
-            var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-            var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
-            var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-            $(".work-entry:last").append(formattedDates);
-            $(".work-entry:last").append(formattedLocation);
-            $(".work-entry:last").append(formattedDescription);
-        }
-    }
+  if (work.jobs.length) {
+      $('#workExperience').append(HTMLworkStart);
+      work.jobs.forEach(function(job){
+          var formattedEmployer = HTMLworkEmployer.replace('%data%', job.employer);
+          var formattedTitle = HTMLworkTitle.replace('%data%', job.title);
+          var formattedEmployerTitle = formattedEmployer + formattedTitle;
+          var formattedDates = HTMLworkDates.replace('%data%', job.dates);
+          var formattedLocation = HTMLworkLocation.replace('%data%', job.location);
+          var formattedDescription = HTMLworkDescription.replace('%data%', job.description);
+          $('.work-entry:last').append(formattedEmployerTitle, formattedDates,
+                                      formattedLocation, formattedDescription);
+      })
+  }
 };
-work.display();
-
-// projects
 projects.display = function() {
-    for (var project in projects.projects) {
-        if (projects.projects.hasOwnProperty(project)) {
-            $("#projects").append(HTMLprojectStart);
-            var formattedprojectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-            var formattedprojectDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-            var formattedprojectDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-            // var formattedprojectsImages = HTMLprojectImage.replace("%data%", projects.projects[project].images);
-            $(".project-entry:last").append(formattedprojectTitle);
-            $(".project-entry:last").append(formattedprojectDates);
-            $(".project-entry:last").append(formattedprojectDescription);
-            for (var image in projects.projects[project].images) {
-                if (projects.projects[project].images.hasOwnProperty(image)) {
-                    var formattedprojectsImages = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-                    $(".project-entry:last").append(formattedprojectsImages);
-                }
-            }
-        }
-    }
+  if (projects.projects.length) {
+      $('#projects').append(HTMLprojectStart);
+      projects.projects.forEach(function(project){
+          var formattedprojectTitle = HTMLprojectTitle.replace('%data%', project.title);
+          var formattedprojectDates = HTMLprojectDates.replace('%data%', project.dates);
+          var formattedprojectDescription = HTMLprojectDescription.replace('%data%', project.description);
+          $('.project-entry:last').append(formattedprojectTitle, formattedprojectDates, formattedprojectDescription);
+          project.images.forEach(function(image){
+            var formattedprojectsImages = HTMLprojectImage.replace('%data%', image);
+            $('.project-entry:last').append(formattedprojectsImages);
+          })
+      })
+  }
 };
-projects.display();
-
-//education
 education.display = function() {
-    $("#education").append(HTMLschoolStart);
-    $(".education-entry:last").append(HTMLrealSchools);
-    for (var school in education.schools) {
-        if (education.schools.hasOwnProperty(school)) {
-            var formattedschoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
-            var formattedschoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-            var formattedschoolNameDegree = formattedschoolName + formattedschoolDegree;
-            var formattedschoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-            var formattedschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-            var formattedschoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
-            $(".education-entry:last").append(formattedschoolNameDegree);
-            $(".education-entry:last").append(formattedschoolDates);
-            $(".education-entry:last").append(formattedschoolLocation);
-            $(".education-entry:last").append(formattedschoolMajor);
-        }
-    }
-    $(".education-entry:last").append(HTMLonlineClasses);
-    for (var onlineCourse in education.onlineCourses) {
-        if (education.onlineCourses.hasOwnProperty(onlineCourse)) {
-            var formattedonlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
-            var formattedonlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
-            var formattedonlineTitleSchool = formattedonlineTitle + formattedonlineSchool;
-            var formattedonlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
-            var formattedonlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[onlineCourse].url);
-            $(".education-entry:last").append(formattedonlineTitleSchool);
-            $(".education-entry:last").append(formattedonlineDates);
-            $(".education-entry:last").append(formattedonlineURL);
-        }
-    }
+    $('#education').append(HTMLschoolStart);
+    $('.education-entry').append(HTMLrealSchools);
+    education.schools.forEach(function(school){
+        var formattedschoolName = HTMLschoolName.replace('%data%', school.name);
+        var formattedschoolDegree = HTMLschoolDegree.replace('%data%', school.degree);
+        var formattedschoolNameDegree = formattedschoolName + formattedschoolDegree;
+        var formattedschoolDates = HTMLschoolDates.replace('%data%', school.dates);
+        var formattedschoolLocation = HTMLschoolLocation.replace('%data%', school.location);
+        $('.education-entry').append(formattedschoolNameDegree, formattedschoolDates, formattedschoolLocation);
+        school.majors.forEach(function(major){
+          var formattedschoolMajor = HTMLschoolMajor.replace('%data%', major);
+          $('.education-entry').append(formattedschoolMajor);
+        })
+    })
+    $('.education-entry').append(HTMLonlineClasses);
+    education.onlineCourses.forEach(function(onlineCourse){
+        var formattedonlineTitle = HTMLonlineTitle.replace('%data%', onlineCourse.title);
+        var formattedonlineSchool = HTMLonlineSchool.replace('%data%', onlineCourse.school);
+        var formattedonlineTitleSchool = formattedonlineTitle + formattedonlineSchool;
+        var formattedonlineDates = HTMLonlineDates.replace('%data%', onlineCourse.date);
+        var formattedonlineURL = HTMLonlineURL.replace('%data%', onlineCourse.url);
+        $('.education-entry:last').append(formattedonlineTitleSchool, formattedonlineDates, formattedonlineURL);
+    })
 };
+
+bio.display();
+work.display();
+projects.display();
 education.display();
 
 // internationalize button
