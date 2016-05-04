@@ -30,7 +30,7 @@ svg {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #063e3e;
   line-height: 48px;
   display: inline;
 }
@@ -108,7 +108,7 @@ a {
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #ed7d31;
 }
 
 .orange-text {
@@ -132,7 +132,8 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  /*background-color: #484848;*/
+  background-color: #ed7d31;
 }
 
 .flex-box {
